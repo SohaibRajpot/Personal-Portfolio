@@ -93,7 +93,7 @@ span {
     0 0 150px rgba(18, 247, 255, 0.6);
 }
 
-#menu-icons {
+#menu-icon {
   font-size: 1.8rem;
   z-index: 10001;
   cursor: pointer;
@@ -380,28 +380,10 @@ section {
   animation: norph 6s linear infinite;
   text-align: center;
 }
-
-.info-about1 {
-  top: 138%;
-  left: 11%;
+.info-section{
   position: absolute;
-}
-.info-about2 {
-  top: 121%;
-  left: 29%;
-  position: absolute;
-}
-.info-about3 {
-  top: 159%;
-  left: 26%;
-  position: absolute;
-}
-.info-about1 span,
-.info-about2 span,
-.info-about3 span {
-  color: var(--hover-color);
-  font-size: 1.5rem;
-  font-weight: 600;
+  top: 168vh;
+  left: 13vw;
 }
 
 /* <!--  Services Section  Css-------------------------------------------------------------> */
@@ -773,89 +755,134 @@ footer a i {
 /*                                break points -----------------------------*/
 
 @media (max-width: 1080px) {
-  header,
-  header.sticky {
-    padding: 15px 5%;
+  .about{
+    margin-top: -815px;
   }
-  .social-icons a {
-    display: inline-flex;
-    width: 50px;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    background: var(--bg-color);
-    color: var(--hover-color);
-    border: 2px solid var(--hover-color);
-    transition: 0.6s;
-    box-shadow: 0 0 0.3rem #12f7ff;
-    position: relative;
-    left: -80px;
-    top: 14px;
-    border-radius: 5px;
-    z-index: 1;
-    overflow: hidden;
+  .home{   
+   margin-top: -696px;
   }
-  .info-about1,
-  .info-about2,
-  .info-about3 {
-    margin: 901px 44px;
+  .fillter-buttons .btn{
+    font-size: 3rem;
   }
-  .info-about2 {
-    margin: 865px 172px;
-  }
-  .info-about3 {
-    margin: 916px 255px;
-  }
-  footer {
-    padding: 15px 5%;
-  }
-
-  .navlist a {
-    padding: 8px 15px;
-  }
-
-  :root {
-    --big-font: 2.2rem;
-    --normal-font: 1.8rem;
-    --neon-box-shadow: 0 0 0.8rem #12f7ff;
-    --h2-font: 3rem;
-  }
-
-  .home-content {
-    margin-top: 5rem;
-  }
-
-  .social-icons {
-    margin-top: 2rem;
-  }
-  section {
-    padding: 50px 5%;
-    width: 101%;
-  }
-  .contact {
-    background: var(--secon-bg-color);
-    width: 112%;
-  }
-  .formBtn .btn {
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-  footer p {
-    font-size: 0.9rem;
-  }
+  .navlist {
+    display: flex;
+    font-size: 1.6rem;
+    padding: 0 87px;
 }
-
-/* For screens up to 768px */
-@media (max-width: 1080px) {
-  #menu-icons {
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 1px solid transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 72px 7%;
+}
+}
+@media (max-width: 720px){
+  #menu-icon {
     display: block;
+    transition: all .4s ease;
     position: relative;
-    left: -324px;
-    transition: all 0.4s ease;
-  }
-  #menu-icons.bx-x {
+    left: -71px;
+}
+  #menu-icon {
     transform: rotate(-180deg);
   }
+  .navlist {
+    display: flex;
+    position: absolute;
+    top: 92%;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    background: var(--bg-color);
+    text-align: left;
+    padding: 0.5%;
+    transition: all .45s ease;
+}
+
+  .navlist a{
+    display: block;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .home {
+    margin-top: -273px;
+}
+.home-content {
+  max-width: 785px;
+  position: relative;
+  top: -39px;
+  left: -38px;
+}
+.home-content h1 {
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+.email-info{
+  position: relative;
+    left: -64px;
+}
+.skill-left {
+  position: relative;
+  left: -3rem;
+  width: 317px;
+}
+.skill-right {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 431px;
+}
+.box {
+  margin: 10px -27px;
+  position: relative;
+  flex: 1 1 15rem;
+}
+#last-box{
+  position: relative;
+  left: 45px;
+}
+.Professional {
+  position: relative;
+  top: -1rem;
+}
+.about {
+  margin-top: -567px;
+  width: 101%;
+}
+.home-img {
+  position: relative;
+  top: -110px;
+  left: -80px;
+  width: 351px;
+}
+.second{
+  position: relative;
+          top: 0rem;
+          width: 305px;
+          left: -38px;
+}
+.fillter-buttons .btn {
+  font-size: 2rem;
+}
+.formBtn .btn {
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 24px;
+  margin-left: 0px;
+}
+.about .about-img img {
+  max-width: 358px;
+  height: auto;
+}
+.contact {
+    background: var(--secon-bg-color);
+    width: 101%;
+}
 }
 
 

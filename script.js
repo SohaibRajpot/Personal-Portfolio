@@ -91,19 +91,39 @@ window.addEventListener("scroll", function() {
 });
 
 // js =------
-
-let menuIcon = document.querySelector("#menu-icons");
+let menuIcon = document.querySelector("#menu-icon");
 let navlist = document.querySelector(".navlist");
 
-menuIcon.onclick = () => {
+menuIcon.addEventListener("click", function () {
     menuIcon.classList.toggle("bx-x");
     navlist.classList.toggle("open");
-};
 
-window.onscroll = () => {
-  menuIcon.classList.remove("bx-x");
-  navlist.classList.remove("open");
-};
+    if (navlist.classList.contains("open")) {
+        navlist.style.transform = "translateY(0%)";
+        menuIcon.style.transform = "rotate(360deg)"; // Rotate the icon 360 degrees when opened
+    } else {
+        navlist.style.transform = "translateY(-180%)";
+        menuIcon.style.transform = "rotate(0deg)"; // Reset the rotation when closed
+    }
+});
+
+document.addEventListener("click", function (e) {
+    if (!e.target.matches('#menu-icon') && !e.target.closest('.navlist')) {
+        menuIcon.classList.remove("bx-x");
+        navlist.classList.remove("open");
+        navlist.style.transform = "translateY(-180%)";
+        menuIcon.style.transform = "rotate(0deg)"; // Reset the rotation when closed
+    }
+});
+
+window.addEventListener("scroll", function () {
+    menuIcon.classList.remove("bx-x");
+    navlist.classList.remove("open");
+    navlist.style.transform = "translateY(-180%)";
+    menuIcon.style.transform = "rotate(0deg)"; // Reset the rotation when closed
+});
+
+
 
 
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -22,7 +22,7 @@
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <div id="menu-icons" class="bx bx-menu"></div>
+      <div id="menu-icon" class="bx bx-menu"></div>
     </header>
     <!--  Home Section ------------------------------------------------------------->
     <section id="home" class="home">
@@ -59,10 +59,20 @@
           <a href="#" class="btn">Hire me Now!</a>
         </div>
         <div class="social-icons">
-          <a href="https://www.facebook.com/profile.php?id=61552516434528" target="_blank"><i class="bx bxl-facebook-circle"></i></a>
-          <a href="https://www.instagram.com/sohaibrajpot4/"target="_blank"><i class="bx bxl-instagram"></i></a>
-          <a href="https://www.youtube.com/channel/UCUDVkCdu5IbS8IBrxTmWkBw"target="_blank"><i class="bx bxl-youtube"></i></a>
-          <a href="#"target="_blank"><i class="bx bxl-twitter"></i></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61552516434528"
+            target="_blank"
+            ><i class="bx bxl-facebook-circle"></i
+          ></a>
+          <a href="https://www.instagram.com/sohaibrajpot4/" target="_blank"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UCUDVkCdu5IbS8IBrxTmWkBw"
+            target="_blank"
+            ><i class="bx bxl-youtube"></i
+          ></a>
+          <a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
         </div>
       </div>
       <div class="home-img">
@@ -169,18 +179,6 @@
       <div class="about-img">
         <img src="images--main/images--main/about-me-pic2.png" alt="" />
       </div>
-      <div class="info-about1">
-        <span>10+</span>
-        <p>Years of Experiences</p>
-      </div>
-      <div class="info-about2">
-        <span>150+</span>
-        <p>Project Complete</p>
-      </div>
-      <div class="info-about3">
-        <span>100+</span>
-        <p>Happy Clients</p>
-      </div>
       <div class="about-content">
         <span>Let's me Introduce myself</span>
         <h2>About Me</h2>
@@ -213,7 +211,9 @@
             for exceptional online experiences.
           </p>
           <div class="btn-box services-btn">
-            <a href="backand/services.html" class="btn" target = _blank>Read More</a>
+            <a href="backand/services.html" class="btn" target="_blank"
+              >Read More</a
+            >
           </div>
         </div>
 
@@ -226,7 +226,7 @@
             and social media Posting. Hire me now
           </p>
           <div class="btn-box services-btn">
-            <a href="#" class="btn" target = _blank >Read More</a>
+            <a href="#" class="btn" target="_blank">Read More</a>
           </div>
         </div>
 
@@ -239,7 +239,7 @@
             Let's connect!
           </p>
           <div class="btn-box services-btn">
-            <a href="#" class="btn" target = _blank >Read More</a>
+            <a href="#" class="btn" target="_blank">Read More</a>
           </div>
         </div>
 
@@ -252,7 +252,7 @@
             sales strategies.
           </p>
           <div class="btn-box services-btn">
-            <a href="#" class="btn" target = _blank >Read More</a>
+            <a href="#" class="btn" target="_blank">Read More</a>
           </div>
         </div>
 
@@ -265,7 +265,7 @@
             marketing impact.Thanks
           </p>
           <div class="btn-box services-btn">
-            <a href="#" class="btn" target = _blank >Read More</a>
+            <a href="#" class="btn" target="_blank">Read More</a>
           </div>
         </div>
 
@@ -278,7 +278,7 @@
             elevate your digital presence!
           </p>
           <div class="btn-box services-btn">
-            <a href="#" class="btn" target = _blank >Read More</a>
+            <a href="#" class="btn" target="_blank">Read More</a>
           </div>
         </div>
       </div>
@@ -335,9 +335,8 @@
           </div>
         </div>
         <div class="skill-right">
-          <h2>Professional Skills</h2>
+          <h2 class="second">Professional Skills</h2>
           <div class="Professional">
-
             <div class="box">
               <div class="circle" data-dots="50" data-percent="60"></div>
               <div class="Text">
@@ -346,7 +345,7 @@
               </div>
             </div>
 
-            <div class="box">
+            <div class="box" id="last-box">
               <div class="circle" data-dots="50" data-percent="80"></div>
               <div class="Text">
                 <big>80%</big>
@@ -358,11 +357,11 @@
               <div class="circle" data-dots="50" data-percent="55"></div>
               <div class="Text">
                 <big>55%</big>
-                <small>Project Management</small>
+                <small>Project</small>
               </div>
             </div>
 
-            <div class="box">
+            <div class="box" id="last-box">
               <div class="circle" data-dots="50" data-percent="70"></div>
               <div class="Text">
                 <big>70%</big>
@@ -374,198 +373,290 @@
       </div>
     </section>
 
-        <!-- Portfolio  Section   -->
-        <section id="portfolio" class="portfolio">
-            <div class="main-text">
-                <span>What i Will do for you</span>
-                <h2>Latest Project</h2>
-              </div>
-              <div class="container">
-                <div class="fillter-buttons">
-                    <button class="btn" data-filter="all">All</button>
-                    <button class="btn" data-filter=".project">Project</button>
-                    <button class="btn" data-filter=".websites">Website</button>
-                    <button class="btn" data-filter=".course">Course</button>
-                </div>
-                <div class="portfolio-gallery">
-                    <div class="port-box mix project">
-                        <div class="port-img">
-                            <img src="img/1.png" alt="">
-                        </div>
-                        <div class="port-content">
-                            <h2>binance Demo Website</h2>
-                            <p>"I'm presenting a dynamic portfolio website with specialized services that highlight my knowledge, expertise, and commitment to producing top-notch outcomes.</p>
-                            <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
-                        </div>
-                    </div>
+    <!-- Portfolio  Section   -->
+    <section id="portfolio" class="portfolio">
+      <div class="main-text">
+        <span>What i Will do for you</span>
+        <h2>Latest Project</h2>
+      </div>
+      <div class="container">
+        <div class="fillter-buttons">
+          <button class="btn" data-filter="all">All</button>
+          <button class="btn" data-filter=".project">Project</button>
+          <button class="btn" data-filter=".websites">Website</button>
+          <button class="btn" data-filter=".course">Course</button>
+        </div>
+        <div class="portfolio-gallery">
+          <div class="port-box mix project">
+            <div class="port-img">
+              <img src="img/1.png" alt="" />
+            </div>
+            <div class="port-content">
+              <h2>binance Demo Website</h2>
+              <p>
+                "I'm presenting a dynamic portfolio website with specialized
+                services that highlight my knowledge, expertise, and commitment
+                to producing top-notch outcomes.
+              </p>
+              <a href="#" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
 
-                    <div class="port-box mix project">
-                        <div class="port-img">
-                            <img src="img/2.avif" alt="">
-                        </div>
-                        <div class="port-content">
-                            <h2>Food Website Demo</h2>
-                            <p>establishing a mouthwatering food website that provides foodies with a great customer experience, a mouthwatering selection of gastronomic treats, and alluring aesthetics.</p>
-                            <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
-                        </div>
-                    </div>
+          <div class="port-box mix project">
+            <div class="port-img">
+              <img src="img/2.avif" alt="" />
+            </div>
+            <div class="port-content">
+              <h2>Food Website Demo</h2>
+              <p>
+                establishing a mouthwatering food website that provides foodies
+                with a great customer experience, a mouthwatering selection of
+                gastronomic treats, and alluring aesthetics.
+              </p>
+              <a href="#" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
 
-                    <div class="port-box mix project">
-                      <div class="port-img">
-                          <img src="img/3.jpeg" alt="">
-                      </div>
-                      <div class="port-content">
-                          <h2>Calculator</h2>
-                          <p>Using HTML, CSS, and JavaScript to create a comprehensive calculator that has improved capabilities for quick calculations.</p>
-                          <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
-                      </div>
-                  </div>
+          <div class="port-box mix project">
+            <div class="port-img">
+              <img src="img/3.jpeg" alt="" />
+            </div>
+            <div class="port-content">
+              <h2>Calculator</h2>
+              <p>
+                Using HTML, CSS, and JavaScript to create a comprehensive
+                calculator that has improved capabilities for quick
+                calculations.
+              </p>
+              <a href="#" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
 
-                  <div class="port-box mix project">
-                    <div class="port-img">
-                        <img src="img/4.jpeg" alt="">
-                    </div>
-                    <div class="port-content">
-                        <h2>Homepage of Google Chrome</h2>
-                        <p>creating a homepage that is as excellent as Google Chrome, concentrating on a modern aesthetic and seamless navigation for the best possible user experience.</p>
-                        <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
+          <div class="port-box mix project">
+            <div class="port-img">
+              <img src="img/4.jpeg" alt="" />
+            </div>
+            <div class="port-content">
+              <h2>Homepage of Google Chrome</h2>
+              <p>
+                creating a homepage that is as excellent as Google Chrome,
+                concentrating on a modern aesthetic and seamless navigation for
+                the best possible user experience.
+              </p>
+              <a href="#" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
 
-                <div class="port-box mix project">
-                  <div class="port-img">
-                      <img src="img/5.jpg" alt="">
-                  </div>
-                  <div class="port-content">
-                      <h2>Windows 11 interface</h2>
-                      <p>launching a project to copy the Windows 11 user interface, making sure to achieve a clean user experience, smooth navigation, and contemporary design</p>
-                      <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
-                  </div>
-              </div>
+          <div class="port-box mix project">
+            <div class="port-img">
+              <img src="img/5.jpg" alt="" />
+            </div>
+            <div class="port-content">
+              <h2>Windows 11 interface</h2>
+              <p>
+                launching a project to copy the Windows 11 user interface,
+                making sure to achieve a clean user experience, smooth
+                navigation, and contemporary design
+              </p>
+              <a href="#" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
 
-                    <div class="port-box mix websites">
-                        <div class="port-img">
-                            <img src="img/6.jpg" alt="">
-                        </div>
-                        <div class="port-content">
-                            <h2>Gym Website</h2>
-                            <p>constructing a strong gym website that caters to fitness aficionados and offers user-friendly design, workout schedules, and a supportive fitness community.</p>
-                            <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
-                        </div>
-                    </div>
+          <div class="port-box mix websites">
+            <div class="port-img">
+              <img src="img/6.jpg" alt="" />
+            </div>
+            <div class="port-content">
+              <h2>Gym Website</h2>
+              <p>
+                constructing a strong gym website that caters to fitness
+                aficionados and offers user-friendly design, workout schedules,
+                and a supportive fitness community.
+              </p>
+              <a href="#" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
 
-                    <div class="port-box mix websites">
-                        <div class="port-img">
-                            <img src="img/7.jpg" alt="">
-                        </div>
-                        <div class="port-content">
-                            <h3>Portfolio website</h3>
-                            <p>Creating a fascinating portfolio website that highlights my abilities, knowledge, and projects in an effort to effectively impress and engage visitors.</p>
-                            <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
-                        </div>
-                    </div>
+          <div class="port-box mix websites">
+            <div class="port-img">
+              <img src="img/7.jpg" alt="" />
+            </div>
+            <div class="port-content">
+              <h3>Portfolio website</h3>
+              <p>
+                Creating a fascinating portfolio website that highlights my
+                abilities, knowledge, and projects in an effort to effectively
+                impress and engage visitors.
+              </p>
+              <a href="#" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
 
-                    <div class="port-box mix websites">
-                      <div class="port-img">
-                          <img src="img/8.jpg" alt="">
-                      </div>
-                      <div class="port-content">
-                          <h3>Blog Website</h3>
-                          <p>I'll design a blog with interesting information that will entice readers and enthusiasts while offering a flawless reading experience.</p>
-                          <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
-                      </div>
-                  </div>
+          <div class="port-box mix websites">
+            <div class="port-img">
+              <img src="img/8.jpg" alt="" />
+            </div>
+            <div class="port-content">
+              <h3>Blog Website</h3>
+              <p>
+                I'll design a blog with interesting information that will entice
+                readers and enthusiasts while offering a flawless reading
+                experience.
+              </p>
+              <a href="#" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
 
-                  <div class="port-box mix websites">
-                    <div class="port-img">
-                        <img src="img/9.jpg" alt="">
-                    </div>
-                    <div class="port-content">
-                        <h3>Modern Website</h3>
-                        <p>I'll build a cutting-edge, contemporary website with a slick look, cutting-edge functionality, and excellent performance.</p>
-                        <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-                <div class="port-box mix websites">
-                  <div class="port-img">
-                      <img src="img/10.jpg" alt="">
-                  </div>
-                  <div class="port-content">
-                      <h3>landing page</h3>
-                      <p>I will create an effective landing page for your company or project that attracts attention, delivers a captivating message, and inspires useful actions.</p>
-                      <a href="#"><i class='bx bx-link-external'></i></a>
-                  </div>
-              </div>
+          <div class="port-box mix websites">
+            <div class="port-img">
+              <img src="img/9.jpg" alt="" />
+            </div>
+            <div class="port-content">
+              <h3>Modern Website</h3>
+              <p>
+                I'll build a cutting-edge, contemporary website with a slick
+                look, cutting-edge functionality, and excellent performance.
+              </p>
+              <a href="#" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+          <div class="port-box mix websites">
+            <div class="port-img">
+              <img src="img/10.jpg" alt="" />
+            </div>
+            <div class="port-content">
+              <h3>landing page</h3>
+              <p>
+                I will create an effective landing page for your company or
+                project that attracts attention, delivers a captivating message,
+                and inspires useful actions.
+              </p>
+              <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
 
-                    <div class="port-box mix course">
-                        <div class="port-img">
-                            <img src="img/html.jpeg" alt="">
-                        </div>
-                        <div class="port-content">
-                            <h2>Html Full Course</h2>
-                            <p>Learn HTML5 tutorial in hindi and urdu with all latest tags in the most easiest way.</p>
-                            <a href="https://www.youtube.com/playlist?list=PL0b6OzIxLPbxStBQ21C2toa5uQMqHEoRT"><i class='bx bx-link-external'></i></a>
-                        </div>
-                    </div>
+          <div class="port-box mix course">
+            <div class="port-img">
+              <img src="img/html.jpeg" alt="" />
+            </div>
+            <div class="port-content">
+              <h2>Html Full Course</h2>
+              <p>
+                Learn HTML5 tutorial in hindi and urdu with all latest tags in
+                the most easiest way.
+              </p>
+              <a
+                href="https://www.youtube.com/playlist?list=PL0b6OzIxLPbxStBQ21C2toa5uQMqHEoRT"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
 
-                    <div class="port-box mix course">
-                        <div class="port-img">
-                            <img src="img/css.jpeg" alt="">
-                        </div>
-                        <div class="port-content">
-                            <h2>CSS Full Course</h2>
-                            <p>CSS course guide: Master styling web content, layouts, and responsiveness with CSS, diving into selectors, properties, and advanced techniques.</p>
-                            <a href="https://youtube.com/playlist?list=PL4PaOIHsZcwJ5WLSMeOCrlmrLdphfhcpo" target="_blank"><i class='bx bx-link-external'></i></a>
-                        </div>
-                    </div>
+          <div class="port-box mix course">
+            <div class="port-img">
+              <img src="img/css.jpeg" alt="" />
+            </div>
+            <div class="port-content">
+              <h2>CSS Full Course</h2>
+              <p>
+                CSS course guide: Master styling web content, layouts, and
+                responsiveness with CSS, diving into selectors, properties, and
+                advanced techniques.
+              </p>
+              <a
+                href="https://youtube.com/playlist?list=PL4PaOIHsZcwJ5WLSMeOCrlmrLdphfhcpo"
+                target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
 
-                    <div class="port-box mix course">
-                      <div class="port-img">
-                          <img src="img/js.jpeg" alt="">
-                      </div>
-                      <div class="port-content">
-                          <h2>JavaScript Full Course</h2>
-                          <p>JavaScript Course in Hindi: This Javascript tutorial in Hindi course is designed for beginners.</p>
-                          <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9ahR1blWXxgSlL4y9iQBnLpR" target="_blank"><i class='bx bx-link-external'></i></a>
-                      </div>
-                  </div>
+          <div class="port-box mix course">
+            <div class="port-img">
+              <img src="img/js.jpeg" alt="" />
+            </div>
+            <div class="port-content">
+              <h2>JavaScript Full Course</h2>
+              <p>
+                JavaScript Course in Hindi: This Javascript tutorial in Hindi
+                course is designed for beginners.
+              </p>
+              <a
+                href="https://www.youtube.com/playlist?list=PLu0W_9lII9ahR1blWXxgSlL4y9iQBnLpR"
+                target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
 
-                  <div class="port-box mix course">
-                    <div class="port-img">
-                        <img src="img/full coures.jpeg" alt="">
-                    </div>
-                    <div class="port-content">
-                        <h2>Web Development Full Course</h2>
-                        <p>HTML, CSS, and JavaScript Basics Front-end and Back-end Development Database Integration Real-world Projects And much more! The best part? It's absolutely FREE </p>
-                        <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w" target="_blank"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-                </div>
-              </div>
-        </section>  
-         <!-- Contact Us  Section   -->
-         <section id="contact" class="contact">
-            <div class="main-text">
-                <span>ask me questions</span>
-                <h2>Contact Me</h2>
-                <form action="form.php" method="post">
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Your Email">
-                    <input type="text" placeholder="Your Address">
-                    <input type="Number" placeholder="Your Phone Number">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                    <div class="btn-box formBtn">
-                        <button type="submit" class="btn">Send Message</button>
-                    </div>
-                </form>
-              </div>
-         </section>
-         <!-- footer section------------------ -->
-         <footer>
-            <p>Copyright &copy; 2023 by Sohaib.Rajpot || All Rights Reserved.</p>
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-         </footer>
-    </body>
-    <script src="mixitup.min.js"></script>
-    <script src="script.js"></script>
+          <div class="port-box mix course">
+            <div class="port-img">
+              <img src="img/full coures.jpeg" alt="" />
+            </div>
+            <div class="port-content">
+              <h2>Web Development Full Course</h2>
+              <p>
+                HTML, CSS, and JavaScript Basics Front-end and Back-end
+                Development Database Integration Real-world Projects And much
+                more! The best part? It's absolutely FREE
+              </p>
+              <a
+                href="https://www.youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w"
+                target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Us  Section   -->
+    <section id="contact" class="contact">
+      <div class="main-text">
+        <span>ask me questions</span>
+        <h2>Contact Me</h2>
+        <form action="form.php" method="post">
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+          <input type="text" placeholder="Your Address" />
+          <input type="Number" placeholder="Your Phone Number" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+          ></textarea>
+          <div class="btn-box formBtn">
+            <button type="submit" class="btn">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- footer section------------------ -->
+    <footer>
+      <p>Copyright &copy; 2023 by Sohaib.Rajpot || All Rights Reserved.</p>
+      <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    </footer>
+  </body>
+  <script src="mixitup.min.js"></script>
+  <script src="script.js"></script>
 </html>
