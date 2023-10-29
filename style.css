@@ -55,7 +55,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 20px 10%;
+ padding: 64px 10%;
 }
 
 header.sticky {
@@ -68,6 +68,8 @@ header.sticky {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 1px;
+  position: relative;
+    top: -41px;
 }
 
 span {
